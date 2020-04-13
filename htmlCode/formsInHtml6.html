@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!--Everything here must be between <form> and </form>-->
+    <!--<form> tag allows you too have form type abjects like empty text boxs, can interact with js later-->
+    <!--Most common input type is text, placeholder command puts starting text in the text box that will dissapear once the user starts to type in the box-->
+    <!-- form types
+    text, creates a small single line text box
+    textarea is a tag not input type, creates an adjustable text box-->
+    <!--select option tags
+    <select><option><><option><>... can select an option as user-->
+    <!--type radio, creates circle check box item list types-->
+    <!--type check box is the same as radio but as a checkbox instead of dots-->
+    <!--type submit is a submit button-->
+    <!--If you give names to things you can return a value from the name category once subbmitted, example name = animals, options dog cat cow... returns what you checked-->
+    <form>
+      <input
+        type="text"
+        placeholder="type email here, placeholder text"
+        name="email"
+      />
+      <br />
+      <textarea placeholder="tester"></textarea>
+      <br />
+      <select>
+        <option>This is option 1</option>
+        <option>This is option 2</option>
+        <option>Ths is option 3</option>
+      </select>
+      <br />
+      <!--Having the same name for each list item only allows 1 item within that name to be selected at a time-->
+      <input type="radio" name="color" /> Red
+      <input type="radio" name="color" /> Green
+      <input type="radio" name="color" /> Blue
+
+      <br />
+      <input type="checkbox" name="animals" value="1" /> Dog
+      <input type="checkbox" name="animals" /> Cat
+      <input type="checkbox" name="animals" /> Fish
+
+      <br />
+      <!--Value gives the button text within it on screen like "click me" or "submit"-->
+      <input type="submit" value="click the button" />
+    </form>
+  </body>
+</html>
