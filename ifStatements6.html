@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>If statements</title>
+  </head>
+  <body>
+    <p>What is the weather?</p>
+    <input id="weather" />
+    <button id="myButton">Submit</button>
+
+    <script type="text/javascript">
+      document.getElementById("myButton").onclick = function () {
+        if (document.getElementById("weather").value == "rain") {
+          alert("it's raining");
+        } else {
+          alert("it's not raining!");
+        }
+      };
+    </script>
+  </body>
+</html>

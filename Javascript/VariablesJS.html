@@ -1,26 +1,29 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Learning Variables</title>
+    <title>Learning Javascript</title>
+
     <meta charset="utf-8" />
     <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <style>
-      #circle {
-        width: 200px;
-        height: 200px;
-        border-radius: 100px;
-        background-color: red;
-      }
-    </style>
   </head>
+
   <body>
-    <div id="circle"></div>
+    <input id="myInput" type="text" value="test" />
+
+    <button id="stylesChanger">Change the text!</button>
+
+    <div id="firstDiv">This is some text</div>
+
     <script type="text/javascript">
-      /*VARIABLES GO HERE, within the script tag and at the top*/
-      var divIdVariable = "circle";
-      document.getElementById(divIdVariable).onclick = function () {
-        document.getElementById(divIdVariable).style.display = "none";
+      //returns current value in input box
+      var newText = document.getElementById("myInput").value;
+
+      document.getElementById("stylesChanger").onclick = function () {
+        //We put new definition of newText variable when button is called in case it has changed since last button press.
+        newText = document.getElementById("myInput").value;
+        //sets the html to what is in input box now
+        document.getElementById("firstDiv").innerHTML = newText;
       };
     </script>
   </body>
