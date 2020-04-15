@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Learning CSS</title>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <style type="text/css">
+      p {
+        /*When you look up a font it will display 3 as seen below, this is in case the browser doesnt support the first font, it will then try second, if it doesnt support that font either it'll go to third..*/
+        /*mono font family of fonts have equal spacing between all characters, other families of fonts do not, this is handy if you want a set amount of characters per line*/
+        font-family: Arial, Helvetica, sans-serif;
+
+        /*ALIGNING TEXT, will in this case make all p text go to the right side of their element (text aligned right in a div will move to the rightmost placement in the div it can go) for p its the RS of the page because p is not in a div unless defined to be*/
+        text-align: right;
+      }
+      .bold {
+        /*use w3school site for font styles, also 1em (instead of 16px) is a browser default size, can use 1.1em or 3.0 to change according to standard sizing, look into it more*/
+        font-weight: bold;
+        color: blue;
+        font-size: 20px;
+      }
+      .italic {
+        font-style: italic;
+      }
+      .underline {
+        text-decoration: underline;
+      }
+      .divSet {
+        background-color: rgb(234, 248, 42);
+        height: 200px;
+        width: 200px;
+        text-align: right;
+      }
+      .justifyText {
+        /*The justify alignment will make sure words go all the way to the border of your div by compressing or spreading the spacing slightly, use carefully because it does change the distance between characters*/
+        text-align: justify;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="bold divSet justifyText">
+      I AM TEXT ALIGNED RIGHT IN DIV CLASS, was changed to justify for
+      experimental purposes.
+    </div>
+    <p class="underline italic bold">I AM TEXT ALIGNED RIGHT P TAG NO DIV</p>
+  </body>
+</html>
