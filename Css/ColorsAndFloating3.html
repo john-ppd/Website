@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style type="text/css">
+      .hi {
+        /*Custom colors if you select a default color and hover over the name of the color (not the color box).*/
+        background-color: rgb(32, 180, 111);
+        width: 200px;
+        height: 200px;
+      }
+      .hey {
+        color: rgb(72, 20, 133);
+      }
+      .floatLeft {
+        float: left;
+      }
+      .floatRight {
+        float: right;
+      }
+    </style>
+  </head>
+  <body>
+    <!--Floating alligns div box to leftmost or rightmost side of screen with non defined divs in the middle, if two divs are floated left they will go side to side on the left side-->
+    <!--Look up html color codes and use the ascii value in the color: section of class declaration, or just define the color as blue or other and hover over the name of the color-->
+    <!--put float in divs-->
+    <div class="hi floatLeft">
+      <p class="hey">
+        This is in class hi, and paragraph class hey. p in div. Floating Left
+      </p>
+    </div>
+    <div class="hi floatLeft">
+      <p class="hey">
+        This is in class hi, and paragraph class hey. p in div.Floating left
+      </p>
+    </div>
+    <div class="hi floatRight">
+      <p class="hey">
+        This is in class hi, and paragraph class hey. p in div.Floating right
+      </p>
+    </div>
+    <div class="hi">
+      <p class="hey">
+        I am not floating
+      </p>
+    </div>
+  </body>
+</html>
