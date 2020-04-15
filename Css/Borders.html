@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Learning CSS</title>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <style type="text/css">
+      div {
+        width: 100px;
+        height: 100px;
+        float: left;
+        margin: 20px;
+      }
+
+      .red {
+        background-color: red;
+        /*Borders ADD to width and height as well*/
+        /*Borders need 3 elements (pixels, color, type), (20px, blue, solid) look up more types on w3school website*/
+        border: 20px rgb(0, 0, 0) ridge;
+      }
+
+      .blue {
+        /*Border styles can be used to make dashed and dotted borders ect*/
+        /*You can set a different syle for top, right, bottom, left in border-style too*/
+        background-color: blue;
+        border-style: ridge solid dotted dashed;
+        border-width: 10px 5px 3px 1px;
+        border-color: green yellow blue black;
+        /*border-radius rounds the edges, can create a circle using this method, use 1/2 h, w*/
+        border-radius: 10px;
+      }
+
+      .green {
+        background-color: green;
+        border-radius: 50px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="red"></div>
+
+    <div class="blue"></div>
+
+    <div class="green"></div>
+  </body>
+</html>
