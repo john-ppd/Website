@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style type="text/css">
+      #div1 {
+        background-color: rgb(43, 214, 66);
+        width: 300px;
+        height: 100px;
+      }
+      #div2 {
+        background-color: deeppink;
+        width: 150px;
+        height: 50px;
+        margin: 15px;
+        padding: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="div1">
+      <p id="para1">
+        This is the default first paragraph text.
+      </p>
+    </div>
+    <button id="button1">Change Text</button>
+    <div id="div2">
+      Click me I'm a div
+    </div>
+    <script type="text/javascript">
+      //Making a button press change p1 to whatever I choose.
+      document.getElementById("button1").onclick = function () {
+        document.getElementById("para1").innerHTML = "Changed text you see";
+
+        //appending text will add "testing" onto end of paragraph 1 text
+        //Appending text means adding to text that is already there.
+        document.getElementById("para1").append("testing");
+      };
+      document.getElementById("div2").onclick = function () {
+        //alert("div was clicked");
+        //below line will take curent tet and add to it as many times is clicked.
+        document.getElementById("para1").innerHTML =
+          document.getElementById("para1").innerHTML + " Changed text you see";
+      };
+    </script>
+  </body>
+</html>
