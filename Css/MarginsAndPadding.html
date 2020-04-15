@@ -27,10 +27,21 @@
         margin-left: 100px;
         margin-bottom: 100px;
       }
+
+      /*PADDING is when the margin goes inwards and creates space between text and the wall of the div*/
+      /*By default the paragraph tag has padding of 10, you need to create a p{ } in style tags and set the MARGIN to 0 to ignore it or else padding a paragraph will be offset, getting rid of the margin will make the p tags line spacing be 0 too, need to keep that in mind*/
+      /*!!! IMPORTANT -- when adding padding each padding ADDS to the margin, so if margin is 20 w and 20 h and padding is 10 w and 10 h, the result is 40w and 40h!!!*/
+      .setPadding {
+        padding: 100px;
+      }
+      p {
+        padding: 0;
+        margin: 0;
+      }
     </style>
   </head>
   <body>
-    <div class="font-size backgroundColor setMarginJustOneSide">
+    <div class="font-size backgroundColor setMarginJustOneSide setPadding">
       <p>
         This is my first div
       </p>
