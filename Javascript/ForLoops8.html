@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+</head>
+
+<body>
+  <p id="arrayString"></p>
+
+  <script type="text/javascript">
+    var arrayString = "";
+
+    var myArray = ["pizza", "chocolate", "crisps"];
+    //<myArray.lenth will give number of elements in the array, be careful tho because you need to use <array.length in the loop limit because the loop starts at 0 not 1
+    for (var i = 0; i < myArray.length; i++) {
+      arrayString = arrayString + myArray[i] + " ";
+    }
+
+    document.getElementById("arrayString").innerHTML = arrayString;
+  </script>
+</body>
+
+</html>
