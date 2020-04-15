@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!--Give p tag id not class since we plan on using JS with it-->
+    <p id="para1">This is my p1</p>
+
+    <!--This script tag for javascript can be placed here or in the head tags, can only have one element with the same id name-->
+    <script type="text/javascript">
+      // <!--document. will look within the entire document for the id-->
+      //What below does, searches whole document for id named para1 and gets the html from between the p tags, alerts it to show it works
+      alert(document.getElementById("para1").innerHTML);
+
+      //Will set the text between the p tag to what I defined "change innerHTML to this now"..
+      document.getElementById("para1").innerHTML =
+        "changed innerHTML to this now";
+      alert(document.getElementById("para1").innerHTML);
+    </script>
+  </body>
+</html>
