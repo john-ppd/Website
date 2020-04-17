@@ -9,9 +9,14 @@
 
 <body>
 
+  <p id="tester">a + b + c = </p>
   <script type="text/javascript">
 
-
+    //can write functions this way
+    function addingABC(a, b, c) {
+      return (a + b + c);
+    }
+    document.getElementById("tester").append(addingABC(1, 2, 3));
 
   </script>
 
