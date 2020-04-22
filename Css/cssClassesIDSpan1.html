@@ -1,50 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
 
-    <!--Make style tag to implement css in html file-->
-    <!--classes are defined within p tag and named, you can adjust the specific class in css code using .className {css code}-->
-    <!--class is a name for a specific type or style of text, can be called whenever you want those attributes (size, color ect.. added to the paragraph or other tags)-->
-    <!--span is used to place a class within a chosen segment or line of code , for example can span a class mid paragraph and change whats in it to be green, define a selected segment of text and applies a class to it-->
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
 
-    <!--YOU CAN GIVE TAGS MULTIPLE TAGS, I.E GREEN AND UNDERLINE OR SOMETHING-->
-    <style type="text/css">
-      p {
-        /*in css this is how you do comments*/
-        /*all font in all p tags will be 200%*/
-        font-size: 200%;
-      }
-      .para1 {
-        font-size: 200%;
-        color: blue;
-      }
-      .AnotherClass {
-        color: red;
-      }
-      /*ID uses # not . */
-      #once {
-        font-size: 120%;
-        color: green;
-      }
-    </style>
-  </head>
-  <body>
-    <!--For two classes in a class "" just seperate names by space, can have more than 2-->
-    <p class="para1 AnotherClass">
-      This is a paragraph given a class name of p1
-    </p>
-    <p id="once">
-      This paragraph is defined with an ID type not a class type, the only
-      difference is that id's
-      <span class="para1"
-        >This is a span with para1 class called, text is 200% regular size and
-        be blue</span
-      >should only be used for one thing, classes can be shared (5 paragraphs
-      can be using same class name, cannot use id that way).
-    </p>
-    <p>This paragraph tag will be larger than usual</p>
-  </body>
+  <!--Make style tag to implement css in html file-->
+  <!--classes are defined within p tag and named, you can adjust the specific class in css code using .className {css code}-->
+  <!--class is a name for a specific type or style of text, can be called whenever you want those attributes (size, color ect.. added to the paragraph or other tags)-->
+  <!--span is used to place a class within a chosen segment or line of code , for example can span a class mid paragraph and change whats in it to be green, define a selected segment of text and applies a class to it-->
+
+  <!--YOU CAN GIVE TAGS MULTIPLE TAGS, I.E GREEN AND UNDERLINE OR SOMETHING-->
+  <style type="text/css">
+    p {
+      /*in css this is how you do comments*/
+      /*all font in all p tags will be 200%*/
+      font-size: 200%;
+    }
+
+    .para1 {
+      font-size: 200%;
+      color: blue;
+    }
+
+    .AnotherClass {
+      color: red;
+    }
+
+    /*ID uses # not . */
+    #once {
+      font-size: 120%;
+      color: green;
+    }
+  </style>
+</head>
+
+<body>
+  <!--For two classes in a class "" just seperate names by space, can have more than 2-->
+  <p class="para1 AnotherClass">
+    This is a paragraph given a class name of p1
+  </p>
+  <p id="once">
+    This paragraph is defined with an ID type not a class type, the only
+    difference is that id's
+    <span class="para1">This is a span with para1 class called, text is 200% regular size and
+      be blue</span>should only be used for one thing, classes can be shared (5 paragraphs
+    can be using same class name, cannot use id that way).
+  </p>
+  <p>This paragraph tag will be larger than usual</p>
+</body>
+
 </html>

@@ -1,94 +1,99 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Learning CSS</title>
 
-    <meta charset="utf-8" />
-    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+<head>
+  <title>Learning CSS</title>
 
-    <style type="text/css">
-      .large {
-        font-size: 200%;
-      }
+  <meta charset="utf-8" />
+  <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-      #green {
-        color: green;
-      }
+  <style type="text/css">
+    .large {
+      font-size: 200%;
+    }
 
-      .underline {
-        text-decoration: underline;
-      }
+    #green {
+      color: green;
+    }
 
-      .bold {
-        font-weight: bold;
-      }
+    .underline {
+      text-decoration: underline;
+    }
 
-      .purplebox {
-        background-color: #b404ae;
-        width: 200px;
-        height: 400px;
-        /*z index, the one with the larger number goes on top of the other, both boxs must have a position type and z index to be effected*/
-        z-index: 1;
-        position: static;
-      }
+    .bold {
+      font-weight: bold;
+    }
 
-      .greenbox {
-        background-color: #295715;
-        width: 300px;
-        height: 500px;
-        z-index: 2;
-      }
-      /*You need to set position to relative so that it moves relative to where it would otherwise be*/
-      .moveRightSome {
-        position: relative;
-        /*left: gives it a left marging and therefore pushing it to the right, same works with top, can have negative value to actually go left or up*/
-        left: 100px;
-      }
-      .positionAbsolute {
-        /*Postion absolute takes div out of the flow of the page, i.e everything else will ignore its precents, its on a top layer*/
-        position: absolute;
-      }
-      .positionFixed {
-        /*Fixed postion makes the div always be in the same position in a top layer even with the movement of the page*/
-        position: fixed;
-        left: 150px;
-        /*If I put background color here, since it is the second class called it will be the set color*/
-      }
-    </style>
-  </head>
+    .purplebox {
+      background-color: #b404ae;
+      width: 200px;
+      height: 400px;
+      /*z index, the one with the larger number goes on top of the other, both boxs must have a position type and z index to be effected*/
+      z-index: 1;
+      position: static;
+    }
 
-  <body>
-    <div class="purplebox positionFixed">
-      <p class="large">
-        This is some text fixed, you can add left and right margins to it and
-        will stay stationary in new position.
-      </p>
-    </div>
+    .greenbox {
+      background-color: #295715;
+      width: 300px;
+      height: 500px;
+      z-index: 2;
+    }
 
-    <div class="greenbox">
-      <p id="green" class="large">This is some more text.</p>
-    </div>
-    <!--the below code has a move right class added to it-->
-    <div class="greenbox moveRightSome">
-      <p id="green" class="large">This is some more text.</p>
-    </div>
-    <div class="greenbox">
-      <p id="green" class="large">This is some more text.</p>
-    </div>
-    <div class="greenbox positionAbsolute">
-      <p id="green" class="large">This Position type absolute.</p>
-    </div>
-    <div class="greenbox positionFixed">
-      <p id="green" class="large">
-        This Position type fixed, DOES NOT SHOW BECAUSE STARTS OFF SCREEN AND
-        WILL NEVER MOVE WITH SCROLLING.
-      </p>
-    </div>
+    /*You need to set position to relative so that it moves relative to where it would otherwise be*/
+    .moveRightSome {
+      position: relative;
+      /*left: gives it a left marging and therefore pushing it to the right, same works with top, can have negative value to actually go left or up*/
+      left: 100px;
+    }
 
-    <p>
-      The third <span class="underline large bold">word</span> in this paragraph
-      is underlined.
+    .positionAbsolute {
+      /*Postion absolute takes div out of the flow of the page, i.e everything else will ignore its precents, its on a top layer*/
+      position: absolute;
+    }
+
+    .positionFixed {
+      /*Fixed postion makes the div always be in the same position in a top layer even with the movement of the page*/
+      position: fixed;
+      left: 150px;
+      /*If I put background color here, since it is the second class called it will be the set color*/
+    }
+  </style>
+</head>
+
+<body>
+  <div class="purplebox positionFixed">
+    <p class="large">
+      This is some text fixed, you can add left and right margins to it and
+      will stay stationary in new position.
     </p>
-  </body>
+  </div>
+
+  <div class="greenbox">
+    <p id="green" class="large">This is some more text.</p>
+  </div>
+  <!--the below code has a move right class added to it-->
+  <div class="greenbox moveRightSome">
+    <p id="green" class="large">This is some more text.</p>
+  </div>
+  <div class="greenbox">
+    <p id="green" class="large">This is some more text.</p>
+  </div>
+  <div class="greenbox positionAbsolute">
+    <p id="green" class="large">This Position type absolute.</p>
+  </div>
+  <div class="greenbox positionFixed">
+    <p id="green" class="large">
+      This Position type fixed, DOES NOT SHOW BECAUSE STARTS OFF SCREEN AND
+      WILL NEVER MOVE WITH SCROLLING.
+    </p>
+  </div>
+
+  <p>
+    The third <span class="underline large bold">word</span> in this paragraph
+    is underlined.
+  </p>
+</body>
+
 </html>

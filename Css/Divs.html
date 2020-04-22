@@ -1,55 +1,58 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Learning CSS</title>
 
-    <meta charset="utf-8" />
-    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+<head>
+  <title>Learning CSS</title>
 
-    <style type="text/css">
-      .large {
-        font-size: 200%;
-      }
+  <meta charset="utf-8" />
+  <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-      #green {
-        color: green;
-      }
+  <style type="text/css">
+    .large {
+      font-size: 200%;
+    }
 
-      .underline {
-        text-decoration: underline;
-      }
+    #green {
+      color: rgb(231, 235, 17);
+    }
 
-      .bold {
-        font-weight: bold;
-      }
+    .underline {
+      text-decoration: underline;
+    }
 
-      .bluebox {
-        background-color: blue;
-        width: 200px;
-        height: 200px;
-      }
+    .bold {
+      font-weight: bold;
+    }
 
-      .redbox {
-        background-color: red;
-        width: 300px;
-        height: 100px;
-      }
-    </style>
-  </head>
+    .bluebox {
+      background-color: rgb(74, 161, 231);
+      width: 100px;
+      height: 200px;
+    }
+
+    .redbox {
+      background-color: rgb(140, 62, 212);
+      width: 300px;
+      height: 100px;
+    }
+  </style>
+</head>
 <!--Divs are boxs (like a text box) that you assign to chunks of code, you can manipute the positioning, size, color, and other things, divs should be given class names so not every div is identical, div is short for division because you are dividing things into boxs.  -->
-  <body>
-    <div class="bluebox">
-      <p class="large">This is some text.</p>
-    </div>
 
-    <div class="redbox">
-      <p id="green" class="large">This is some more text.</p>
-    </div>
+<body>
+  <div class="bluebox">
+    <p class="large">This is some text.</p>
+  </div>
 
-    <p>
-      The third <span class="underline large bold">word</span> in this paragraph
-      is underlined.
-    </p>
-  </body>
+  <div class="redbox">
+    <p id="green" class="large">This is some more text.</p>
+  </div>
+
+  <p>
+    The third <span class="underline large bold">word</span> in this paragraph
+    is underlined.
+  </p>
+</body>
+
 </html>
