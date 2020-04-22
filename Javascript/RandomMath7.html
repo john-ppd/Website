@@ -1,31 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-  </head>
-  <body>
-    <p>How many fingers am I holding up?</p>
-    <input id="answer" />
-    <button id="myButton">Submit</button>
 
-    <script type="text/javascript">
-      document.getElementById("myButton").onclick = function () {
-        //The Math.random() function randomizes from 0-1, we multiply it by 6 so that it will be from 0-6, can do this for almost any size of random needed.
-        var x = Math.random();
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+</head>
 
-        x = 6 * x;
-        //math.floor rounds down and to an int, so in this case will return values 0,1,2,3,4,5
-        x = Math.floor(x);
+<body>
+  <p>How many fingers am I holding up?</p>
+  <input id="answer" />
+  <button id="myButton">Submit</button>
 
-        if (x == document.getElementById("answer").value) {
-          alert("That's correct!");
-        } else {
-          //can print the variable by using + x, take that c++!
-          alert("That's wrong! My number was " + x);
-        }
-      };
-    </script>
-  </body>
+  <script type="text/javascript">
+    document.getElementById("myButton").onclick = function () {
+      //The Math.random() function randomizes from 0-1, we multiply it by 6 so that it will be from 0-6, can do this for almost any size of random needed.
+      var x = Math.random();
+
+      x = 6 * x;
+      //math.floor rounds down and to an int, so in this case will return values 0,1,2,3,4,5
+      x = Math.floor(x);
+      var y = document.getElementById("answer").value;
+      console.log(y);
+      if (x == document.getElementById("answer").value) {
+        alert("That's correct!");
+      } else {
+        //can print the variable by using + x, take that c++!
+        alert("That's wrong! My number was " + x);
+      }
+    };
+  </script>
+</body>
+
 </html>
