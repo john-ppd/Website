@@ -1,0 +1,41 @@
+#timeBox{
+  width: 150px;
+  height: 50px;
+  background-color: black;
+  color: white;
+  font-size: 15px;
+margin: 15px;
+text-align: center;
+}
+#timeBox2{
+  width: 150px;
+  height: 50px;
+  background-color: black;
+  color: white;
+  font-size: 15px;
+margin: 15px;
+text-align: center;
+}
+
+.green{
+  background-color: green;
+  width: 50px;
+  height: 30px;
+  padding: 5px;
+  margin: 10px;
+}
+#min1{
+  color: rgb(208, 236, 46);
+}
+#min5{
+  color: rgb(46, 236, 147);
+}
+#min15{
+  color: rgb(204, 46, 236);
+}
+#buttonGo{
+  margin: 15px;
+  width: 150px;
+  height: 50px;
+}
+
