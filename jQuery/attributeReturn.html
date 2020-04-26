@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Learning JQuery</title>
+  <!--This one would be faster for live website, other is locally stored file -- <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"> </script>-->
+  <script type="text/javascript" src="jquery.min.js"></script>
+  </script>
+  <style type="text/css">
+    #squareRed1 {
+      width: 100px;
+      height: 100px;
+      background-color: red;
+      margin: 10px;
+    }
+
+    #squareRed2 {
+      width: 100px;
+      height: 100px;
+      background-color: red;
+      margin: 10px;
+
+    }
+
+    .circleGreen1 {
+      width: 100px;
+      height: 100px;
+      border-radius: 50px;
+      background-color: green;
+      margin: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="squareRed1">
+
+  </div>
+  <div id="squareRed2">
+
+  </div>
+  <div class="circleGreen1">
+
+  </div>
+  <iframe src="https://www.bing.com"></iframe>
+  <script>
+    //we can return any attribute we want by using .attr("") i think its just used for things with source
+    //$("img").attr("width", "500"); should set width to 500
+
+    //to change the innerHTML using jQuery we use the .html("") function
+    $("#squareRed1").click(function () {
+      $("#squareRed1").html("width");
+
+    });
+
+    //RETURN CONTENT OF innerHTML, not putting anything within the brackets will return the current html within the object. Generally in jQuery putting something in the brackets will change it, leaving the brackets empty will get the value.
+    $("#squareRed2").click(function () {
+      alert($("#squareRed2").html());
+    });
+
+    //using the hover function, once hovered the code will run
+    $(".circleGreen1").hover(function () {
+      alert($("#squareRed2").html());
+    });
+  </script>
+</body>
+
+</html>

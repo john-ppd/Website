@@ -24,7 +24,7 @@
 
     }
 
-    #circleGreen1 {
+    .circleGreen1 {
       width: 100px;
       height: 100px;
       border-radius: 50px;
@@ -41,14 +41,24 @@
   <div id="squareRed2">
 
   </div>
-  <div id="circleGreen1">
+  <div class="circleGreen1">
 
   </div>
-
+  <iframe src="https://www.bing.com"></iframe>
   <script>
-    //the $ symbol is used almost everytime to define this is using jquery code
-    $("#circleGreen1").click(function () {
-      alert("worked");
+    //to change the innerHTML using jQuery we use the .html("") function
+    $("#squareRed1").click(function () {
+      $("#squareRed2").html("this changed");
+    });
+
+    //RETURN CONTENT OF innerHTML, not putting anything within the brackets will return the current html within the object. Generally in jQuery putting something in the brackets will change it, leaving the brackets empty will get the value.
+    $("#squareRed2").click(function () {
+      alert($("#squareRed2").html());
+    });
+
+    //using the hover function, once hovered the code will run
+    $(".circleGreen1").hover(function () {
+      alert($("#squareRed2").html());
     });
   </script>
 </body>
