@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Learning JQuery</title>
+  <!--This one would be faster for live website, other is locally stored file -- <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"> </script>-->
+  <script type="text/javascript" src="jquery.min.js"></script>
+  </script>
+  <style type="text/css">
+    #squareRed1 {
+      width: 100px;
+      height: 100px;
+      background-color: red;
+      margin: 10px;
+    }
+
+    #squareOrange {
+      width: 100px;
+      height: 100px;
+      background-color: orange;
+      margin: 10px;
+
+    }
+
+    .circleGreen1 {
+      width: 100px;
+      height: 100px;
+      border-radius: 50px;
+      background-color: green;
+      margin: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <!--<input type="text">-->
+  <p id="para1">This is para1 text</p>
+  <button id="squareOrange">Fade text away</button>
+
+  </div>
+
+  <script>
+    function fadeIn() {
+      $("#para1").fadeIn(2000);
+    }
+    $("#squareOrange").click(function () {
+      //Look up .fadeOut(); jquery on google to see how to place variables and other uses of the function
+
+      //(2000ms, functionToRunOnceFadeOutCompletes)
+      $("#para1").fadeOut(2000, fadeIn);
+
+    });
+  </script>
+</body>
+
+</html>
