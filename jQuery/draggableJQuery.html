@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Learning JQuery</title>
+  <!--This one would be faster for live website, other is locally stored file -- <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"> </script>-->
+  <script type="text/javascript" src="jquery.min.js"></script>
+  </script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <style>
+    #square {
+      width: 100px;
+      height: 100px;
+      background-color: purple;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="square"></div>
+
+  <script>
+    //go to https://jqueryui.com/ to see all functions using jQueryUI, draggable and resize and all others.
+    $("#square").draggable();
+  </script>
+</body>
+
+</html>
