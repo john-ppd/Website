@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Learning JQuery</title>
+  <!--This one would be faster for live website, other is locally stored file -- <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"> </script>-->
+  <script type="text/javascript" src="jquery.min.js"></script>
+  </script>
+  <style type="text/css">
+    #squareRed1 {
+      width: 100px;
+      height: 100px;
+      background-color: red;
+      margin: 10px;
+    }
+
+    #squareRed2 {
+      width: 100px;
+      height: 100px;
+      background-color: red;
+      margin: 10px;
+
+    }
+
+    .circleGreen1 {
+      width: 100px;
+      height: 100px;
+      border-radius: 50px;
+      background-color: green;
+      margin: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="squareRed1">
+
+  </div>
+  <div id="squareRed2">
+
+  </div>
+  <div class="circleGreen1">
+
+  </div>
+
+  <script>
+    //ragex can be used to search a string and see if it containes a specific word of set of characters, if you have the i flag set to the right of the / it will be an non case sensitive search. if you have the g flag set it will return every instance of what you ask for it to look for, i.e the letter "e".circleGreen1
+
+    var ragexVariable1 = /john/;//put word you're searching for between // no quotes.
+    var myString = "john is my name"
+    var result = myString.match(ragexVariable1);
+    alert(result);// this will return "john", if john is removed will return null
+
+    var ragexVariable2 = /john/i;//the i flag will return case insensitive John or JOHN all accepted, actual return is "jOhN" in this case even tho searching for "john"
+    var myString2 = "jOhN";
+    result = myString2.match(ragexVariable2);
+    alert(result);
+
+    var ragexVariable3 = /e/g;//the g flag will return all elements of e within our string, three in "three e", actual return is e,e,e
+    var myString3 = "three e";
+    result = myString3.match(ragexVariable3);
+    alert(result); 
+  </script>
+</body>
+
+</html>
