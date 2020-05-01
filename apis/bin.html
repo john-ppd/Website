@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    var burl = "https://api.binance.com";
+    // var query = '/api/v3/ticker/bookTicker';
+    //query += '?symbol=BTCUSDT'//&limit=1'
+
+    /*
+Parameters:
+Name	Type	Mandatory	Description
+symbol	STRING	YES	
+interval	ENUM	YES	
+startTime	LONG	NO	
+endTime	LONG	NO	
+limit	INT	NO	Default 500; max 1000.
+
+with these paramentes we need to define the mandatory fields, and the others are optional, must all be in order. In this case the format is symbol->interval->limit and we define it as '?symbol=BTCUSDT&interval=15m&limit=500'
+    */
+    var query = '/api/v3/klines';
+    query += '?symbol=BTCUSDT&interval=15m&limit=500'
+    var url = burl + query
+    var ourRequest = new XMLHttpRequest();
+    ourRequest.open('GET', url, true);
+    ourRequest.onload = function () {
+      console.log(ourRequest.responseText);
+    }
+    ourRequest.send();
+
+  </script>
+</body>
+
+</html>
